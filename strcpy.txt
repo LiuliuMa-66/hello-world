@@ -1,0 +1,16 @@
+#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
+char* StrCpy(char* src)
+{
+	int i = 0;
+	int len = strlen(src);
+	char* a =(char*) malloc(sizeof(len + 1));
+	for ( i = 0; i < len ; i++)
+	{
+		*(a + i) = *(src + i);
+	}
+	*(a + i + 1) = '\0';
+	return a;
+
+}
